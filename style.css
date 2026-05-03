@@ -1,5 +1,11 @@
+body {
+    background-color: black; 
+}
+
 .site-title {
     font-family: "Nasalization", sans-serif;
     text-align: center;
     font-size: 64px;
+    margin-top: 10px;
+    color: white;
 }
