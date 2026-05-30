@@ -1,4 +1,4 @@
-fetch("https://api.ipify.org?format=json")
+fetch("https://ipwho.is")
     .then(response => response.json())
     .then(data => {
         console.log(data);
