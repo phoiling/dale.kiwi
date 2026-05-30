@@ -1,3 +1,10 @@
+fetch("https://ip.hackclub.com/ip")
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+    }
+)
+
 var map = L.map('map').setView([51.505, -0.09], 13);
 
 var circle = L.circle([51.505, -0.09],{
