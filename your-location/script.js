@@ -1,4 +1,4 @@
-fetch("https://ipwho.is")
+fetch("https://geolocation-db.com/json/")
     .then(response => response.json())
     .then(data => {
         console.log(data);
