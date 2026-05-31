@@ -10,7 +10,7 @@ var circle = L.circle([lat, long],{
     color: 'blue',
     fillColor: '#2799d2',
     fillOpacty:0.5,
-    raidus:10000
+    radius:500
 
 }).addTo(map);
 
