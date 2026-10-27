@@ -74,3 +74,8 @@ body {
 body.day #wipe {
     transform: scale(80);
 }
+
+body.loading,
+body.loading * {
+    transition: none !important;
+}
