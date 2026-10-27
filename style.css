@@ -1,5 +1,5 @@
 body {
-    background-color: black; 
+    background-color: black;
 }
 
 .site-title {
@@ -25,4 +25,52 @@ body {
     display: inline-block;
     vertical-align: middle;
     cursor: pointer;
+}
+
+#day-night-toggle {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background: transparent;
+}
+
+#day-night-toggle img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100% ;
+    transition: transform 0.7s;
+}
+
+#day-night-toggle.day .moon {
+    transform: rotate(180deg) scale(0);
+}
+
+#day-night-toggle.day .sun {
+    transform: none;
+}
+
+.sun {
+    transform: rotate(-180deg) scale(0);
+}
+
+#wipe {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    background:  #7ec6f5;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+}
+
+body.day #wipe {
+    transform: scale(80);
 }
